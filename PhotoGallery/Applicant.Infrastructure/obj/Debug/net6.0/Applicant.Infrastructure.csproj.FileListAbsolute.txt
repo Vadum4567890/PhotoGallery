@@ -1,0 +1,70 @@
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfo.cs
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.deps.json
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.runtimeconfig.json
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.pdb
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.dll
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.pdb
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CopyComplete
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\refint\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.pdb
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.genruntimeconfig.cache
+C:\Users\solpo\source\BigProjects\WumShop\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\ref\Applicant.Infrastructure.dll
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.deps.json
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.runtimeconfig.json
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.dll
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.pdb
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.dll
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.pdb
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.AssemblyReference.cache
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfoInputs.cache
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfo.cs
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CopyComplete
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.dll
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\refint\Applicant.Infrastructure.dll
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.pdb
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.genruntimeconfig.cache
+D:\Диплом\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\ref\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.deps.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.runtimeconfig.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfo.cs
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.sourcelink.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CopyComplete
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\refint\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.genruntimeconfig.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Infrastructure\obj\Debug\net6.0\ref\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.deps.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.runtimeconfig.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Infrastructure.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\bin\Debug\net6.0\Applicant.Domain.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.AssemblyInfo.cs
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.sourcelink.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.csproj.CopyComplete
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\refint\Applicant.Infrastructure.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\Applicant.Infrastructure.genruntimeconfig.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant – копія (2)\Applicant.Infrastructure\obj\Debug\net6.0\ref\Applicant.Infrastructure.dll

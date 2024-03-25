@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y8nGk2IzixhmlqeAjrnIIXaZ5X25+Aso5vglcOh82Rvox8aVRUYv8f5vVxo+ksUL/0MkewDNS3o9oJQr+5joEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\solpo\\source\\BigProjects\\WumShop\\backendWUM\\src\\Services\\Applicant – копія (2)\\Applicant.Domain\\Applicant.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\solpo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\solpo\\.nuget\\packages\\microsoft.extensions.features\\6.0.21\\microsoft.extensions.features.6.0.21.nupkg.sha512",
+    "C:\\Users\\solpo\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\solpo\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

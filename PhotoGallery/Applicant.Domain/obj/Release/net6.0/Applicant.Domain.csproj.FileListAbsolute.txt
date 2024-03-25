@@ -1,0 +1,12 @@
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\bin\Release\net6.0\Applicant.Domain.deps.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\bin\Release\net6.0\Applicant.Domain.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\bin\Release\net6.0\Applicant.Domain.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.AssemblyInfoInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.AssemblyInfo.cs
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.csproj.CoreCompileInputs.cache
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.sourcelink.json
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\refint\Applicant.Domain.dll
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\Applicant.Domain.pdb
+C:\Users\solpo\source\BigProjects\WumShop\backendWUM\src\Services\Applicant\Applicant.Domain\obj\Release\net6.0\ref\Applicant.Domain.dll

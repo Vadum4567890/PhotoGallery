@@ -1,0 +1,2 @@
+obj\Release\net6.0\Proto/Exam.cs \
+obj\Release\net6.0\Proto/ExamGrpc.cs: Proto/exam.proto

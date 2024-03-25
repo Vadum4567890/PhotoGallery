@@ -1,0 +1,2 @@
+obj\Release\net6.0\Proto/Applicant.cs \
+obj\Release\net6.0\Proto/ApplicantGrpc.cs: Proto/applicant.proto
