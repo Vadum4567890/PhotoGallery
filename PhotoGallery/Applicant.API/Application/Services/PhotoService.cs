@@ -49,7 +49,7 @@ namespace Applicant.API.Application.Services
         {
             var imageName = await SaveImage(photoCreateDto.ImageFile);
             var photo = _mapper.Map<Photo>(photoCreateDto);
-            photo.ImageSrc = imageName; // Set the ImageSrc directly
+            photo.Caption = imageName; // Set the ImageSrc directly
             await _photoRepository.PhotoRepository.AddPhotoAsync(photo);
             return _mapper.Map<PhotoReadDto>(photo);
         }
@@ -81,7 +81,14 @@ namespace Applicant.API.Application.Services
 
         public async Task DeletePhotoAsync(int id)
         {
-            await _photoRepository.PhotoRepository.DeletePhotoAsync(id);
+            var photo =  await _photoRepository.PhotoRepository.GetPhotoByIdAsync(id);
+            if (photo != null)
+            {
+                DeleteImage(photo.Caption);
+            }
+            
+             await _photoRepository.PhotoRepository.DeletePhotoAsync(id);
+             
         }
 
         public async Task LikePhotoAsync(int id)

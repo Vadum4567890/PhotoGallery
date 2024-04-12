@@ -23,30 +23,41 @@ namespace Applicant.API.Controllers
         public async Task<ActionResult<IEnumerable<PhotoReadDto>>> GetAllPhotosAsync()
         {
             var photos = await _photoService.GetAllPhotosAsync();
-            return Ok(photos);
-        }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<PhotoReadDto>> GetPhotoByIdAsync(int id)
-        {
-            var photo = await _photoService.GetPhotoByIdAsync(id);
-
-            if (photo == null)
-            {
-                return NotFound();
-            }
-
-            var photoDto = new PhotoReadDto()
+            var photoDtos = photos.Select(photo => new PhotoReadDto
             {
                 Caption = photo.Caption,
                 Dislikes = photo.Dislikes,
                 Id = photo.Id,
                 ImageSrc = String.Format("{0}://{1}/Images/{2}", Request.Scheme, Request.Host, photo.Caption),
                 Likes = photo.Likes,
-            };
+            });
 
-            return Ok(photoDto);
+            return Ok(photoDtos);
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<IEnumerable<PhotoReadDto>>> GetPhotoByIdAsync(int id)
+        {
+            var photos = await _photoService.GetPhotosByAlbumIdAsync(id);
+
+            if (photos == null || !photos.Any())
+            {
+                return NotFound();
+            }
+
+            var photoDtos = photos.Select(photo => new PhotoReadDto
+            {
+                Caption = photo.Caption,
+                Dislikes = photo.Dislikes,
+                Id = photo.Id,
+                ImageSrc = String.Format("{0}://{1}/Images/{2}", Request.Scheme, Request.Host, photo.Caption),
+                Likes = photo.Likes,
+            });
+
+            return Ok(photoDtos);
+        }
+
 
         [HttpPost]
         public async Task<ActionResult<PhotoReadDto>> AddPhotoAsync([FromForm] PhotoCreateDto photoCreateDto)
@@ -77,14 +88,6 @@ namespace Applicant.API.Controllers
         public async Task<IActionResult> DeletePhotoAsync(int id)
         {
             await _photoService.DeletePhotoAsync(id);
-
-            // Delete photo file from server if exists
-            var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
-            var photoFilePath = Path.Combine(uploadsFolder, id.ToString());
-            if  (System.IO.File.Exists(photoFilePath))
-            {
-                System.IO.File.Delete(photoFilePath);
-            }
 
             return NoContent();
         }

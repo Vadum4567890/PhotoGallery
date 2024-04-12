@@ -4,9 +4,9 @@ import { USER_URL } from "../../utils/constants";
 
 export const getAllPhotos = createAsyncThunk(
     "photos/getAllPhotos",
-    async(_, thunkApi) => {
+    async(albumId, thunkApi) => {
         try {
-            const res = await axios.get(`${USER_URL}/Photos`);
+            const res = await axios.get(`${USER_URL}/Photo/${albumId}`);
             console.log(res);
             return res.data;
             
@@ -30,7 +30,7 @@ export const addPhoto = createAsyncThunk(
                 }
             };
 
-            const res = await axios.post(`${USER_URL}/Photos`, payload, config);
+            const res = await axios.post(`${USER_URL}/Photo`, payload, config);
             console.log(res);
         }
         catch (err) {
@@ -59,7 +59,7 @@ export const editPhoto = createAsyncThunk(
           },
         };
   
-        const res = await axios.put(`${USER_URL}/Photos/${photoId}`, updatedPhoto, config);
+        const res = await axios.put(`${USER_URL}/Photo/${photoId}`, updatedPhoto, config);
         console.log(res);
         return res.data; // Assuming the response contains the updated album data
       } catch (err) {
@@ -91,7 +91,9 @@ export const deletePhoto = createAsyncThunk(
     }
   );
   
-
+  export const clearPhotos = () => ({
+    type: "photos/clearPhotos"
+  });
 
 const photoSlice = createSlice({
     name: "photo",
@@ -122,6 +124,10 @@ const photoSlice = createSlice({
             state.isLoading = false;
           });
           builder.addCase(deletePhoto.rejected, (state) => {
+            state.isLoading = false;
+          });
+          builder.addCase(clearPhotos, (state) => {
+            state.photos = [];
             state.isLoading = false;
           });
     }

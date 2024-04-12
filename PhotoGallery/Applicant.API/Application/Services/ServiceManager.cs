@@ -20,12 +20,12 @@ namespace Applicant.API.Application.Services
         private readonly Lazy<IPhotoService> _lazyPhotoService;
         //  IReportGrpcService reportGrpcService, IExamGrpcService examGrpcService,
         public ServiceManager(IRepositoryManager repositoryManager,IMapper mapper, 
-            IOptionsMonitor<JwtConfig> optionsMonitor, IEmailService emailService)
+            IOptionsMonitor<JwtConfig> optionsMonitor, IEmailService emailService, IWebHostEnvironment webHostEnvironment)
         {
             _lazyAccessCodeService = new Lazy<IAccessCodeService>(() => new AccessCodeService(repositoryManager, mapper, optionsMonitor,emailService));
             _lazyUserService = new Lazy<IUserService>(() => new UserService(repositoryManager, mapper,  emailService));
             _lazyAlbumService = new Lazy<IAlbumService>(() => new AlbumService(repositoryManager, mapper));
-            _lazyPhotoService = new Lazy<IPhotoService>(() => new PhotoService(repositoryManager, mapper));
+            _lazyPhotoService = new Lazy<IPhotoService>(() => new PhotoService(repositoryManager, mapper, webHostEnvironment));
             // reportGrpcService, examGrpcService,
         }
 
@@ -33,6 +33,7 @@ namespace Applicant.API.Application.Services
         public IUserService UserService => _lazyUserService.Value;
         public IAlbumService AlbumService => _lazyAlbumService.Value;
         public IPhotoService PhotoService => _lazyPhotoService.Value;
+
     }
 
 }
