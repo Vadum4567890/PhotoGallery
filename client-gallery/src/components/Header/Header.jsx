@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../../styles/Header.module.css';
 
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 import { ROUTES } from '../../utils/routes';
 
 
 import ACCOUNT from '../../images/header/User.svg';
-import LOCATION from '../../images/header/Location.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut, toggleForm } from '../../features/user/userSlice';
 import UserForm from '../User/UserForm';
@@ -53,7 +52,7 @@ const Header = () => {
                 ) : (<></>)
         }
         <div className={styles.title}>
-            <h1>Photo Gallery</h1>
+            <h1><NavLink to="/">Photo Gallery</NavLink></h1>
         </div>
             <div className={styles.account}>
             {

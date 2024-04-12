@@ -2,6 +2,7 @@
 using Applicant.API.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 
 namespace Applicant.API.Controllers
 {
@@ -29,33 +30,32 @@ namespace Applicant.API.Controllers
         public async Task<ActionResult<PhotoReadDto>> GetPhotoByIdAsync(int id)
         {
             var photo = await _photoService.GetPhotoByIdAsync(id);
+
             if (photo == null)
             {
                 return NotFound();
             }
-            return Ok(photo);
+
+            var photoDto = new PhotoReadDto()
+            {
+                Caption = photo.Caption,
+                Dislikes = photo.Dislikes,
+                Id = photo.Id,
+                ImageSrc = String.Format("{0}://{1}/Images/{2}", Request.Scheme, Request.Host, photo.Caption),
+                Likes = photo.Likes,
+            };
+
+            return Ok(photoDto);
         }
 
         [HttpPost]
         public async Task<ActionResult<PhotoReadDto>> AddPhotoAsync([FromForm] PhotoCreateDto photoCreateDto)
         {
+      
             var photo = await _photoService.AddPhotoAsync(photoCreateDto);
-
             if (photo == null)
             {
                 return BadRequest();
-            }
-
-            // Save uploaded file to the server
-            if (photoCreateDto.ImageFile != null && photoCreateDto.ImageFile.Length > 0)
-            {
-                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
-                var uniqueFileName = Guid.NewGuid().ToString() + "_" + photoCreateDto.ImageFile.FileName;
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await photoCreateDto.ImageFile.CopyToAsync(fileStream);
-                }
             }
 
             return CreatedAtAction(nameof(GetPhotoByIdAsync), new { id = photo.Id }, photo);
@@ -81,7 +81,7 @@ namespace Applicant.API.Controllers
             // Delete photo file from server if exists
             var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
             var photoFilePath = Path.Combine(uploadsFolder, id.ToString());
-            if (System.IO.File.Exists(photoFilePath))
+            if  (System.IO.File.Exists(photoFilePath))
             {
                 System.IO.File.Delete(photoFilePath);
             }
@@ -102,5 +102,9 @@ namespace Applicant.API.Controllers
             await _photoService.DislikePhotoAsync(id);
             return NoContent();
         }
+
+
+
+     
     }
 }

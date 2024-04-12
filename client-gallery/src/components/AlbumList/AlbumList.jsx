@@ -51,17 +51,16 @@ const AlbumList = () => {
           <ul>
             {albums.map((album) => (
               <li key={album.id}>
-                <div to={`/album/${album.id}`}>
+                <div>
                   <div className={styles.album_item}>
                     <h3>{album.name}</h3>
-                    <p>{album.userId}</p> {/* You can display other album properties as needed */}
+                    <NavLink to={`/album/${album.id}`}>{album.userId}</NavLink> {/* You can display other album properties as needed */}
                     {currentUser === album.userId && (
                     <>
                       <EditModal album={album} />
                       <button className={styles.delete_button} onClick={() => handleDeleteAlbum(album.id, album.userId)}>
                       <FaTrash style={{color:"black"}} />
                       </button>
-                      
                     </>
                   )}
                 

@@ -1,15 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userSlice from "./user/userSlice";
 import albumSlice from "./album/albumSlice";
+import photoSlice from "./photo/photoSlice";
 
 export const store = configureStore({
     reducer: {
-        // categories: categoriesSlice,
+        photo: photoSlice,
         user: userSlice,
         album: albumSlice,
-        // subcategories: subcategoriesSlice,
-        // products: productsSlice,
-        // brands: brandsSlice
     },
     devTools: true
 });
