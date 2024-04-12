@@ -1,0 +1,15 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: #fff;
+    /* opacity: 0.88; */
+}   
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    background-color: #fff;
+}

@@ -1,0 +1,125 @@
+
+
+.topsells__h1 {
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+.topsells {
+    margin-top: 120px;
+    margin-left: 0px;
+}
+
+.action__offers {
+    margin-top: 70px;
+    margin-left: 0px;
+}
+
+
+.likebtn {
+    position: absolute;
+    right: 19.2px;
+    top: 23.4px;
+}
+
+.buybtn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: -15%;
+    right: 12px;
+    filter: drop-shadow(0px 1.844886064529419px 6.457101345062256px #E9E9E9);
+    /* margin-left: 200px;*/
+}
+.topsells__buy {
+    position: relative;
+    left: 15px;
+    top: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.product_image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.product_image img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.topsells__product__star {
+    margin-left: 8px;
+}
+
+
+.topsells__productlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 32px;
+}
+
+.topsells__product__img {
+    position: relative;
+    width: 233px;
+    height: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9E9E9;
+}
+
+.topsells__product__description {
+    width: 233px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #000;
+    /* padding: 12px 0px 12px 12px; */
+}
+.topsells__product__description__title {
+    width: 173px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.topsells__product__description__title p{
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+
+
+.topsells__product__description__nameprice {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+.topsells__product__description__nameprice p{
+    color: #F78269;
+    font-family: "Monserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

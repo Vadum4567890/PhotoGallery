@@ -1,0 +1,291 @@
+.headercontent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  padding: 0px 0px;
+  box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+  background-color: #FFF;
+  margin: 0px auto;
+  gap: 67px;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #000;
+
+}
+
+
+.logo {
+  flex: 1; 
+  text-align: center; 
+  margin-left: 80px;
+  margin-bottom: 15px;
+}
+
+.accounticon {
+  min-width: 25px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.arrowbtn img{
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+
+.city {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.city select {
+  border: none;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 3px;
+}
+.city option { 
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.city p{
+  margin-left: 9px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chooselocation {
+  display: flex;
+  gap: 10px;
+  width: 170px;
+  padding: 10px 15px;
+}
+
+
+.count {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #F34A25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -2px;
+  right: -2px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--light);
+  line-height: 16px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.language a:first-child {
+  margin-right: 5px; /* Додаємо відступ зправа для першого посилання */
+  color: #242424;
+}
+
+.language button {
+  color: #242424;
+}
+.language p {
+  color: #242424;
+}
+
+.language a:last-child button {
+  margin-left: 5px; /* Додаємо відступ зліва для другого посилання */
+  color: #F34A25;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+.username {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--grey);
+}
+ 
+p {
+  font-size: 26px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--fff);
+  border-radius: 38px;
+  height: 35px;
+  padding: 7px 10px;
+  column-gap: 16px;
+  width: 472px;
+  border-color: white;
+
+  /* min-width: 100px; */
+  align-items: center;
+  border-radius: 50px 0px 0px 50px;
+  border-top: 1px solid #D2D2D2;
+  border-bottom: 1px solid #D2D2D2;
+  border-left: 1px solid #D2D2D2;
+}
+
+.accountleave p{
+  color: #000;
+  font-size: 16px;
+}
+
+.icon {
+  z-index: 5;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right:-20px;
+  border-radius: 38px;
+  width: 40px;
+  height: 40px;
+  background-color: #F34A25;
+  padding: 8px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.input input {
+  font-family: "Monserrat", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 14px;
+  color: black;
+  background: none;
+  outline: none;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+
+
+.searchbutton {
+  position: absolute;
+  z-index: 9;
+  border-radius: 38px 0 0 38px;
+  overflow-y: auto;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.buttontext{
+  background-color: #F34A25;
+  font-weight: 400;
+  min-width: 114px;
+  height: 40px;
+}
+
+
+
+.cart {
+  position: relative;
+  margin-bottom: 1px;
+  min-width: 24px;
+}
+
+
+.searchResults {
+  background-color: #FFF;
+  position: absolute;
+  z-index: 3;
+  width: 29rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.item {
+  font-size: 16px;
+  color: var(--grey);
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+ .item img {
+  width: 100%;
+  height: 100%;
+  max-width: 70px;
+  max-height: 70px;
+ }
+
+.item:hover {
+  color: #000;
+}
+
+.searched__text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+.searched__image {
+  margin-left: 30px;
+  width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  background-color: #FFF;
+}
+
+
+@media (max-width: 1200px) {
+  .chooselocation {
+    display: none;
+  }
+  .form {
+    display: none;
+  }
+ 
+}
