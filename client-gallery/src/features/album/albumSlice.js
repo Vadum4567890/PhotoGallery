@@ -47,6 +47,29 @@ export const createAlbum = createAsyncThunk(
     }   
 )
 
+
+export const editAlbum = createAsyncThunk(
+    "albums/editAlbum",
+    async ({ albumId, updatedAlbum }, thunkAPI) => {
+      try {
+        const token = localStorage.getItem("token");
+        const config = {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        };
+  
+        const res = await axios.put(`${USER_URL}/Albums/${albumId}`, updatedAlbum, config);
+        console.log(res);
+        return res.data; // Assuming the response contains the updated album data
+      } catch (err) {
+        console.error(err);
+        return thunkAPI.rejectWithValue(err.response.data); // Return error message on failure
+      }
+    }
+  );
+  
+
 export const deleteAlbum = createAsyncThunk(
     "albums/deleteAlbum",
     async (albumId, thunkAPI) => {
@@ -90,6 +113,17 @@ const albumSlice = createSlice({
         builder.addCase(getAllAlbums.rejected, (state) => {
             state.isLoading = false;
         });
+        builder.addCase(deleteAlbum.pending, (state) => {
+            state.isLoading = true;
+          });
+          builder.addCase(deleteAlbum.fulfilled, (state, { payload: deletedAlbumId }) => {
+            // Remove the deleted album from state
+            state.albums = state.albums.filter((album) => album.id !== deletedAlbumId);
+            state.isLoading = false;
+          });
+          builder.addCase(deleteAlbum.rejected, (state) => {
+            state.isLoading = false;
+          });
     }
 });
 

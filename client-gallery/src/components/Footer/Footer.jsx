@@ -10,7 +10,6 @@ const Footer = () => {
         <section className={styles.footer}>
             <div className={styles.infoblock}>
                 <p>Test Task</p>
-                
             </div>
            
             <div className={styles.socials}>   
