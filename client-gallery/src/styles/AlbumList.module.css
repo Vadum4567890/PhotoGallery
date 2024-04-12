@@ -1,18 +1,22 @@
 .album_list {
     display: flex;
     justify-content: center;
+   
   }
   
   .album_list ul {
     list-style: none;
     padding: 0;
+    
   }
   
   .album_list li {
     margin-bottom: 20px;
+    
   }
   
   .album_item {
+    align-items: center;
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 5px;

@@ -41,6 +41,7 @@ const Album = () => {
     formData.append('imageFile', file); // Append the file to the formData
 
     dispatch(addPhoto(formData)); // Dispatch the addPhoto action with the formData
+    alert('Photo added successfully, please update your page!');
   };
 
 
@@ -51,8 +52,8 @@ const Album = () => {
       <h2>Upload Photo</h2>
       <form onSubmit={handleSubmit}>
           <div className={styles.fileInputContainer}>
-            <input type="file" id="image" accept="image/*" onChange={handleFileChange} className={styles.fileInput} />
             <label htmlFor="image" className={styles.fileInputLabel}>Select Image</label>
+            <input type="file" id="image" accept="image/*" onChange={handleFileChange} className={styles.fileInput} />
           </div>
           <button className={styles.uploadButton} type="submit">Upload</button>
         </form>

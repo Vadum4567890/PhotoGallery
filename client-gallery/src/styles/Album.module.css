@@ -16,6 +16,23 @@
     padding: 100px;
 }
 
+.fileInputContainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.uploadButton {
+    margin-left: 150px;
+    display: flex;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
 .photo img {
     width: 100%;
     height: 100%;
