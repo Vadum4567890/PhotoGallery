@@ -69,8 +69,7 @@ export const editPhoto = createAsyncThunk(
     }
   );
   
-
-export const deletePhoto = createAsyncThunk(
+  export const deletePhoto = createAsyncThunk(
     "photos/deletePhoto",
     async (photoId, thunkAPI) => {
       try {
@@ -81,16 +80,15 @@ export const deletePhoto = createAsyncThunk(
           },
         };
   
-        // Send a DELETE request to delete the album by ID
-        await axios.delete(`${USER_URL}/Photos/${photoId}`, config);
-        return photoId; // Return the deleted album ID on success
+        // Send a DELETE request to delete the photo by ID
+        await axios.delete(`${USER_URL}/Photo/${photoId}`, config);
+        return photoId; // Return the deleted photo ID on success
       } catch (err) {
         console.error(err);
         return thunkAPI.rejectWithValue(err.response.data); // Return error message on failure
       }
     }
   );
-  
   export const clearPhotos = () => ({
     type: "photos/clearPhotos"
   });
@@ -133,7 +131,7 @@ const photoSlice = createSlice({
     }
 });
 
-  export const {  } = photoSlice.actions;
+  // export const { clearPhotos } = photoSlice.actions;
   export default photoSlice.reducer;
   
   

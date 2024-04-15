@@ -11,7 +11,6 @@ import EditModal from '../AdditionalComponents/EditModal';
 const AlbumList = () => {
   const { albums, isLoading } = useSelector((state) => state.album);
   const dispatch = useDispatch();
-
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
@@ -34,7 +33,6 @@ const AlbumList = () => {
       dispatch(deleteAlbum(albumId));
     }
   };
-
 
   return (
     <main>
@@ -63,7 +61,6 @@ const AlbumList = () => {
                       </button>
                     </>
                   )}
-                
                   </div>
                 </div>
               </li>

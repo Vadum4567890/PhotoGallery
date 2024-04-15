@@ -17,6 +17,28 @@ export const getAllAlbums = createAsyncThunk(
     }
 )
 
+export const getAlbumById = createAsyncThunk(
+    "albums/getAlbumById",
+    async(albumId, thunkApi) => {
+      try {
+        const res = await axios.get(`${USER_URL}/Albums/${albumId}`);
+        console.log(res);
+        return res.data;
+    }
+    catch (err) {
+    console.error(err);  // Log the full error for debugging purposes
+
+    // Return a serializable error object
+    return thunkApi.rejectWithValue({
+        message: err.message,
+        name: err.name,
+        code: err.code,
+    });
+    }
+    }
+);
+
+
 
 export const createAlbum = createAsyncThunk(
     "albums/createAlbum",
@@ -32,6 +54,7 @@ export const createAlbum = createAsyncThunk(
 
             const res = await axios.post(`${USER_URL}/Albums`, payload, config);
             console.log(res);
+            return res.data;
         }
         catch (err) {
         console.error(err);  // Log the full error for debugging purposes
@@ -97,25 +120,27 @@ const albumSlice = createSlice({
     name: "album",
     initialState: {
         albums: [],
-        isLoading: false, 
+        isLoading: false,
+        album: null, 
     },
     reducers: {
         // Your reducer functions here if needed
     },
     extraReducers: (builder) => {
-        builder.addCase(getAllAlbums.pending, (state) => {
-            state.isLoading = true;
-        });
-        builder.addCase(getAllAlbums.fulfilled, (state, {payload}) => {
-            state.albums = payload;
-            state.isLoading = false;
-        })
-        builder.addCase(getAllAlbums.rejected, (state) => {
-            state.isLoading = false;
-        });
-        builder.addCase(deleteAlbum.pending, (state) => {
+          builder.addCase(getAllAlbums.pending, (state) => {
+              state.isLoading = true;
+          });
+           builder.addCase(getAllAlbums.fulfilled, (state, {payload}) => {
+              state.albums = payload;
+              state.isLoading = false;
+          })
+          builder.addCase(getAllAlbums.rejected, (state) => {
+              state.isLoading = false;
+          });
+          builder.addCase(deleteAlbum.pending, (state) => {
             state.isLoading = true;
           });
+
           builder.addCase(deleteAlbum.fulfilled, (state, { payload: deletedAlbumId }) => {
             // Remove the deleted album from state
             state.albums = state.albums.filter((album) => album.id !== deletedAlbumId);
@@ -124,10 +149,20 @@ const albumSlice = createSlice({
           builder.addCase(deleteAlbum.rejected, (state) => {
             state.isLoading = false;
           });
+
+          builder.addCase(getAlbumById.fulfilled, (state, { payload }) => {
+            // Handle the fulfilled action for getAlbumById if needed
+            state.isLoading = false;
+            state.album = payload;
+          })
+          builder.addCase(getAlbumById.rejected, (state) => {
+            state.isLoading = false;
+          });
+
     }
 });
 
-  export const {  } = albumSlice.actions;
+  export const { clearPhotos } = albumSlice.actions;
   export default albumSlice.reducer;
   
   
